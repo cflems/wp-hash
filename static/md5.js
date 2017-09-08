@@ -195,5 +195,5 @@ function md52 (s) {
       out[4*i+j] = String.fromCharCode((groups[i]>>(8*j))&0xff);
     }
   }
-  return out;
+  return out.join('');
 }
