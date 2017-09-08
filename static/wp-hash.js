@@ -33,7 +33,7 @@ function enc64 (str, count) {
 
 // Takes in 6 random bytes
 function mksalt (rand) {
-  let output = '$P$B' + enc64(rand, rand.length);
+  return '$P$B' + enc64(rand, rand.length);
 }
 
 function hashwsalt (str, saltstr) {
