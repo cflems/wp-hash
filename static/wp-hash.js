@@ -40,9 +40,9 @@ function hashwsalt (str, saltstr) {
   let output = (saltstr.substr(0, 2) == '*0') ? '*1' : '*0';
   let count = 1 << itoa64.indexOf(saltstr.charAt(3));
   let salt = saltstr.substr(4, 8);
-  let hash = md5(salt . str, # IN RAW MODE -- NO HEX DIGEST);
+  let hash = md52(salt . str);
   do {
-    hash = md5(hash . str, # RAW);
+    hash = md52(hash . str);
   } while (--count);
 
   return saltstr.substr(0, 12) + enc64(hash, 16);
