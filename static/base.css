@@ -8,7 +8,7 @@ body {
   margin: 10em auto 0;
   width: 480px;
   text-align: center;
-  padding: 2em;
+  padding: 1.5em 1.5em 1em 1.5em;
   border: 1px solid #000000;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0,0,0,0.75);
@@ -16,8 +16,15 @@ body {
 .box h1 {
   margin: 0 0 0.25em 0;
 }
-.box p {
+p.input {
   margin: 0.5em;
+}
+p.input a {
+  color: #17769a;
+  text-decoration: none;
+}
+p.input a:hover {
+  color: #21a9dd;
 }
 .box input[type=text] {
   font-size: 10pt;
