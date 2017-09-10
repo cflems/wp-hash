@@ -19,11 +19,11 @@ body {
 p.input {
   margin: 0.5em;
 }
-p.input a {
+.box a {
   color: #17769a;
   text-decoration: none;
 }
-p.input a:hover {
+.box a:hover {
   color: #21a9dd;
 }
 .box input[type=text] {
